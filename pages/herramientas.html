@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas - Guitarra Club</title>
+    <!-- Bootstrap 5 CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../assets/css/themes.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (mismo que en otros archivos) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-guitar me-2"></i>
+                Guitarra Club
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biblioteca.html">Mi Biblioteca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buscar.html">Buscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="herramientas.html">Herramientas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tools Grid -->
+    <div class="container py-5">
+        <h2 class="mb-4 text-white">Herramientas</h2>
+        <div class="row g-4">
+            <!-- Metrónomo -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">
+                            <i class="fas fa-clock text-white me-2"></i>
+                            Metrónomo
+                        </h5>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-center my-4">
+                            <button class="btn btn-outline-primary btn-lg rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <button class="btn btn-outline-secondary">-</button>
+                            <span class="h4 mb-0">120</span>
+                            <button class="btn btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afinador -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">
+                            <i class="fas fa-music text-white me-2"></i>
+                            Afinador
+                        </h5>
+                        <hr>
+                        <div class="tuner-display text-center my-4">
+                            <div class="display-4">E</div>
+                            <div class="progress my-3">
+                                <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                            </div>
+                            <div class="text-muted">82.41 Hz</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acordes -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">
+                            <i class="fas fa-guitar text-white me-2"></i>
+                            Diccionario de Acordes
+                        </h5>
+                        <hr>
+                        <div class="chord-selector text-center">
+                            <select class="form-select mb-3">
+                                <option>C</option>
+                                <option>D</option>
+                                <option>E</option>
+                                <option>F</option>
+                                <option>G</option>
+                                <option>A</option>
+                                <option>B</option>
+                            </select>
+                            <div class="chord-diagram">
+                                <!-- Aquí iría el diagrama del acorde -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transpositor -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">
+                            <i class="fas fa-exchange-alt text-white me-2"></i>
+                            Transpositor
+                        </h5>
+                        <hr>
+                        <div class="mb-3">
+                            <label class="form-label text-white">De:</label>
+                            <select class="form-select">
+                                <option>C</option>
+                                <option>G</option>
+                                <option>D</option>
+                                <option>A</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">A:</label>
+                            <select class="form-select">
+                                <option>C</option>
+                                <option>G</option>
+                                <option>D</option>
+                                <option>A</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/herramientas.js"></script>
+</body>
+</html>

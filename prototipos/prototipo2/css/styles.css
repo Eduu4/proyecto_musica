@@ -1,0 +1,29 @@
+body {
+  background-color: #121212;
+  color: #fff;
+}
+.sidebar {
+  background-color: #1f1f1f;
+  height: 100vh;
+  overflow-y: auto;
+}
+.tablatura-box, .letra-box, .notas-box {
+  font-family: monospace;
+  white-space: pre-wrap;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.progress-box {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+}
