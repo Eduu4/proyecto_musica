@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sesión en Vivo - Guitarra Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #121212; color: #fff; }
+    .sidebar { height: 100vh; background-color: #1f1f1f; }
+    .chat-box { max-height: 300px; overflow-y: auto; }
+    .tablatura-box { font-family: monospace; white-space: pre; background-color: #222; padding: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Sidebar: Participantes -->
+      <div class="col-md-2 sidebar p-3">
+        <h5>👥 Participantes</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+            🎤 Noe <span class="badge bg-success">Conectado</span>
+          </li>
+          <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+            🎸 Leo <span class="badge bg-warning">Sincronizando...</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Panel -->
+      <div class="col-md-8 p-4">
+        <!-- Encabezado -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h4>🎵 Sesión: "Sweet Child O' Mine"</h4>
+          <div>
+            <span class="badge bg-success">Activa</span>
+            <span class="ms-3">⏱ 01:23 / 04:12</span>
+            <button class="btn btn-danger btn-sm ms-3">Finalizar</button>
+          </div>
+        </div>
+
+        <!-- Reproductor -->
+        <div class="text-center mb-4">
+          <h5>Nota actual: <span class="text-info fs-4">E</span></h5>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-info" style="width: 35%;">01:23</div>
+          </div>
+          <div>
+            <button class="btn btn-success me-2">▶️ Play</button>
+            <button class="btn btn-secondary me-2">⏸ Pause</button>
+            <button class="btn btn-outline-light me-2">⏮</button>
+            <button class="btn btn-outline-light">⏭</button>
+          </div>
+        </div>
+
+        <!-- Tabs de contenido -->
+        <ul class="nav nav-tabs mb-3" id="contentTabs">
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#letra">Letra</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tablatura">Tablatura</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#notas">Notas</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="letra">
+            <div class="tablatura-box">🎤 She's got a smile that it seems to me...</div>
+          </div>
+          <div class="tab-pane fade" id="tablatura">
+            <div class="tablatura-box">E|----------------|<br>B|----------------|<br>G|--0--2--4--2--0--|</div>
+          </div>
+          <div class="tab-pane fade" id="notas">
+            <div class="tablatura-box">E, G, A, B, C, D</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat -->
+      <div class="col-md-2 sidebar p-3 border-start">
+        <h6>💬 Chat</h6>
+        <div class="chat-box mb-3">
+          <div><strong>Noe:</strong> ¡Arrancamos en 3, 2, 1!</div>
+          <div><strong>Leo:</strong> Listo 🎸</div>
+        </div>
+        <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

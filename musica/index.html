@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra Club - Inicio</title>
+    <!-- Bootstrap 5 CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/themes.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                <i class="fas fa-guitar me-2"></i>
+                Nombre de club
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="pages/biblioteca.html">Mi Biblioteca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="pages/buscar.html">Buscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="pages/herramientas.html">Herramientas</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3">
+                    <div class="input-group">
+                        <input class="form-control border-0" type="search" placeholder="¿Qué quieres tocar hoy?">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <button class="btn btn-primary">Iniciar sesión</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section py-5 min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 mb-5">
+                    <h1 class="display-2 fw-bold mb-4 animate__animated animate__fadeInDown">
+                        Nombre de club
+                    </h1>
+                    <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                        Tu plataforma personal para aprender, crear y compartir música
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <a href="pages/biblioteca.html" class="card text-decoration-none h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="card-body text-center py-4">
+                            <i class="fas fa-folder-music fa-3x mb-3 text-white"></i>
+                            <h3 class="h5 text-white">Mi Biblioteca</h3>
+                            <p class="small text-white-50">Accede a tus canciones guardadas</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pages/buscar.html" class="card text-decoration-none h-100 animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="card-body text-center py-4">
+                            <i class="fas fa-search fa-3x mb-3 text-white"></i>
+                            <h3 class="h5 text-white">Buscar</h3>
+                            <p class="small text-white-50">Explora nuevas canciones</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pages/herramientas.html" class="card text-decoration-none h-100 animate__animated animate__fadeInUp animate__delay-4s">
+                        <div class="card-body text-center py-4">
+                            <i class="fas fa-tools fa-3x mb-3 text-white"></i>
+                            <h3 class="h5 text-white">Herramientas</h3>
+                            <p class="small text-white-50">Metrónomo, afinador y más</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Tools Sidebar -->
+            <div class="col-lg-4">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Nueva Canción -->
+    <div class="modal fade" id="newSongModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-plus-circle me-2"></i>
+                        Nueva Canción
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newSongForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Título de la Canción</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Artista</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Tono</label>
+                                <select class="form-select">
+                                    <option>C</option>
+                                    <option>G</option>
+                                    <option>D</option>
+                                    <option>A</option>
+                                    <option>E</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Género</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Dificultad</label>
+                                <select class="form-select">
+                                    <option>Principiante</option>
+                                    <option>Intermedio</option>
+                                    <option>Avanzado</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Tablatura</label>
+                                <textarea class="form-control font-monospace" rows="10" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Notas Adicionales</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="newSongForm" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>
+                        Guardar Canción
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

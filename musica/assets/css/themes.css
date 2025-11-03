@@ -1,0 +1,11 @@
+
+:root {
+    --background-color: #121212;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3B3;
+    --accent-color: #1DB954;
+    --card-background: #181818;
+    --navbar-background: #000000;
+    --gradient-start: #1DB954;
+    --gradient-end: #121212;
+}

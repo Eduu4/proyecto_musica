@@ -1,0 +1,7 @@
+Agregar login simulado con formulario y sesión local.
+
+Crear un panel de biblioteca para listar, buscar y abrir canciones.
+
+Agregar formularios para crear/editar canciones y guardar en localStorage o simular API.
+
+Simular favoritos, historial y compartir con lógica JS y persistencia local.

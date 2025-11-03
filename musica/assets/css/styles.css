@@ -1,0 +1,265 @@
+/* Custom Styles */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--navbar-background);
+    padding: 4rem 0;
+    margin-top: -1rem;
+}
+
+/* Navbar customization */
+.navbar {
+    background-color: var(--navbar-background) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Search Box */
+.search-box {
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.search-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Card customization */
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: var(--card-background);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    background: #282828;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Tools card specific styles */
+.btn-tool {
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Chord styles */
+.chord {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 0 2px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Tab notation */
+.tab-notation {
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 8px;
+    white-space: pre;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Button customization */
+.btn {
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+    transform: scale(1.05);
+}
+
+.btn-outline-primary {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Badge customization */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Tempo control */
+input[readonly] {
+    background-color: #fff !important;
+    font-weight: 600;
+    width: 80px;
+    color: #000;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: -webkit-linear-gradient(var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .tab-notation {
+        font-size: 0.8rem;
+    }
+}
+
+/* Animation for tools buttons */
+.btn-tool i {
+    transition: transform 0.2s ease;
+}
+
+.btn-tool:hover i {
+    transform: rotate(-5deg) scale(1.2);
+}
+
+/* Song info badges */
+.song-info .badge {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+/* Custom scrollbar for tab notation */
+.tab-notation::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tab-notation::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 4px;
+}
+
+.tab-notation::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.tab-notation::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* Custom Modal Styling */
+.modal-content {
+    background-color: var(--card-background);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+    background-color: #282828;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control:focus {
+    background-color: #282828;
+    color: var(--text-primary);
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+.form-select {
+    background-color: #282828;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+/* Custom List Group */
+.list-group-dark .list-group-item {
+    background-color: var(--card-background);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.list-group-dark .list-group-item-action:hover {
+    background-color: #282828;
+}
+
+.list-group-dark .list-group-item-action.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Custom Badge Colors */
+.badge.bg-secondary {
+    background-color: #555 !important;
+}
+
+/* Search Hero Section */
+.search-hero {
+    background-color: var(--navbar-background);
+}
+
+/* Custom Form Check */
+.form-check-input {
+    background-color: #282828;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-check-input:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.1);
+}

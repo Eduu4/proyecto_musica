@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guitarra Club - Sesión en Vivo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar izquierda: participantes + herramientas -->
+      <div id="sidebar-participantes" class="col-md-2 sidebar p-3"></div>
+
+      <!-- Panel central: reproductor + tabs -->
+      <div id="panel-central" class="col-md-8 p-4"></div>
+
+      <!-- Sidebar derecha: chat -->
+      <div id="sidebar-chat" class="col-md-2 sidebar p-3 border-start"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="session.js"></script>
+  <script src="player.js"></script>
+  <script src="tools.js"></script>
+  <script src="chat.js"></script>
+  <script src="socket.js"></script>
+</body>
+</html>
