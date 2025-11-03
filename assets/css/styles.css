@@ -11,7 +11,6 @@ body {
 .hero-section {
     background-color: var(--navbar-background);
     padding: 4rem 0;
-    margin-top: -1rem;
 }
 
 /* Navbar customization */
